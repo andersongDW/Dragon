@@ -153,8 +153,8 @@
           },
           {
             "position": {
-              "x": 530,
-              "y": 330.0000000000001
+              "x": 520,
+              "y": 365
             },
             "size": {
               "width": 130,
@@ -165,9 +165,9 @@
                 "text": "Autenticación"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": "4 3"
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
               }
             },
             "visible": true,
@@ -260,15 +260,29 @@
               "type": "tm.Process",
               "name": "Autenticación",
               "description": "registra , autentica usuario ",
-              "outOfScope": true,
+              "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ed85d71f-6250-40d4-871b-9df8d1c371d4",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Introduzca una descripción para esta amenaza",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 7,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -287,7 +301,7 @@
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "visible": true,
@@ -380,7 +394,7 @@
               "type": "tm.Process",
               "name": "pasarela de pagos",
               "description": "encargada de realizar pagos",
-              "outOfScope": false,
+              "outOfScope": true,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
@@ -654,13 +668,6 @@
                   "score": ""
                 }
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -709,12 +716,12 @@
             },
             "vertices": [
               {
-                "x": 490,
-                "y": 385
+                "x": 480,
+                "y": 425
               },
               {
-                "x": 240,
-                "y": 385
+                "x": 230,
+                "y": 425
               }
             ]
           },
@@ -810,8 +817,8 @@
             },
             "vertices": [
               {
-                "x": 700,
-                "y": 460
+                "x": 690,
+                "y": 500
               }
             ]
           },
@@ -861,8 +868,8 @@
             },
             "vertices": [
               {
-                "x": 700,
-                "y": 400
+                "x": 690,
+                "y": 440
               }
             ]
           },
@@ -1261,12 +1268,12 @@
               "topLine": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               },
               "bottomLine": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
-                "strokeDasharray": null
+                "strokeDasharray": "4 3"
               }
             },
             "visible": true,
@@ -1359,7 +1366,7 @@
               "type": "tm.Store",
               "name": "Base de datos",
               "description": "",
-              "outOfScope": false,
+              "outOfScope": true,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
@@ -1383,6 +1390,13 @@
                   "score": ""
                 }
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ]
@@ -1390,6 +1404,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Juan",
-    "threatTop": 6
+    "threatTop": 7
   }
 }
